@@ -82,6 +82,10 @@ nav>ul>li:hover {
     }
 }
 
+#logout {
+    font-size: 1.2em;
+}
+
 /* BLOG SECTION STYLE */
 
 main {
