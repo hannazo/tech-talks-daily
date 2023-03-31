@@ -21,8 +21,11 @@
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/dashboard">Dashboard</a></li>
-                <li><a href="/login">Login</a></li>
+                {{#if loggedIn}}
                 <li><a href="/logout">Logout</a></li>
+                {{else}}
+                <li><a href="/login">Login</a></li>
+                {{/if}}
             </ul>
         </nav>
     </header>
@@ -31,9 +34,7 @@
     <main>
         <!-- PAGE CONTENT TITLE-->
         <div>
-            <h2>All Blog Posts</h2>
-
-            <!-- BLOG POST CARD-->
+      
             {{{body}}}
 
         </div>
@@ -43,6 +44,9 @@
     <footer>
         &copy; Tech Blog
     </footer>
+    {{#if loggedIn}}
+    <script src="/js/logout.js"></script>
+    {{/if}}
 </body>
 
 </html>

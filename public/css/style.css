@@ -7,7 +7,13 @@ html {
     height: 100%;
 }
 
-header, h2, h3 {
+main {
+    min-height: 100%;
+}
+
+header,
+h2,
+h3 {
     text-transform: uppercase;
 }
 
@@ -83,12 +89,15 @@ main {
 }
 
 h2 {
-    padding-bottom: 50px;
+    padding-bottom: 25px;
+    text-align: center;
 }
 
-h2, h3 {
+h2,
+h3 {
     color: #4e4e4e;
 }
+
 .card a {
     width: 100%;
     display: inline-block;
@@ -108,7 +117,7 @@ h2, h3 {
 }
 
 .title p {
-    color: #646464;
+    color: #838383;
 }
 
 .content {
@@ -116,11 +125,11 @@ h2, h3 {
 }
 
 .card:hover {
-    color: #646464;
+    color: #838383;
 }
 
-
-footer{
+/* FOOTER SECTION STYLE */
+footer {
     color: #292929;
     background-color: #d3d3d3;
     text-align: center;
@@ -128,4 +137,59 @@ footer{
     padding: 30px 0;
     text-transform: uppercase;
     font-size: 1.1em;
-  }
+}
+
+/* LOG IN SECTION STYLE */
+.login-card {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input {
+    display: block;
+    max-width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+    margin-bottom: 25px;
+    font-size: 1em;
+}
+
+.login-card label {
+    display: block;
+}
+
+.login-card button {
+    background-color: #f03e49;
+    text-transform: uppercase;
+    border: 0;
+    color: white;
+    font-size: 1.1em;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.login-card button:hover {
+    background-color: #f3656d;
+}
+
+.login-card a{
+    text-decoration: none;
+    color: #292929;
+    margin-bottom: 25px; 
+    text-transform: uppercase;   
+    width: fit-content;
+}
+
+.login-card a:hover {
+    color: #838383;
+    text-decoration: underline;
+    text-underline-position: under;
+}
