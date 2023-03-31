@@ -15,11 +15,11 @@ Comment.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-        date_created: {
-            type: DataTypes.DATE,
-            allowNull: false,
-            // defaultValue: CURRENT_TIMESTAMP,
-        },
+        // date_created: {
+        //     type: DataTypes.DATE,
+        //     allowNull: false,
+        //     // defaultValue: CURRENT_TIMESTAMP,
+        // },
         user_id: {
             type: DataTypes.INTEGER,
             references: {
