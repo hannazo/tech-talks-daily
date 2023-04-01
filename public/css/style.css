@@ -143,15 +143,17 @@ footer {
     font-size: 1.1em;
 }
 
-/* LOG IN SECTION STYLE */
-.login-card {
+/* LOG IN & SIGN UP SECTIONS STYLE */
+.login-card,
+.signup-card {
     max-width: 400px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
 }
 
-.login-card form {
+.login-card form,
+.signup-card form {
     display: flex;
     flex-direction: column;
 }
@@ -165,11 +167,13 @@ footer {
     font-size: 1em;
 }
 
-.login-card label {
+.login-card label,
+.signup-card label {
     display: block;
 }
 
-.login-card button {
+.login-card button,
+.signup-card button {
     background-color: #f03e49;
     text-transform: uppercase;
     border: 0;
@@ -180,11 +184,13 @@ footer {
     margin-bottom: 25px;
 }
 
-.login-card button:hover {
+.login-card button:hover,
+.signup-card button:hover {
     background-color: #f3656d;
 }
 
-.login-card a{
+.login-card a,
+.signup-card a {
     text-decoration: none;
     color: #292929;
     margin-bottom: 25px; 
@@ -192,7 +198,8 @@ footer {
     width: fit-content;
 }
 
-.login-card a:hover {
+.login-card a:hover,
+.signup-card a:hover {
     color: #838383;
     text-decoration: underline;
     text-underline-position: under;

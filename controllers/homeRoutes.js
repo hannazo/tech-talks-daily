@@ -47,13 +47,24 @@ router.get('/post/:id', withAuth, async (req, res) => {
     }
 });
 
+// LOGIN route
 router.get('/login', (req, res) => {
     if (req.session.loggedIn) {
-      res.redirect('/');
-      return;
+        res.redirect('/');
+        return;
     }
-  
+
     res.render('login');
-  });
+});
+
+// SIGNUP route
+router.get('/signup', (req, res) => {
+    if (req.session.loggedIn) {
+        res.redirect('/');
+        return;
+    }
+
+    res.render('signup');
+});
 
 module.exports = router;
