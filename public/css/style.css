@@ -204,3 +204,31 @@ footer {
     text-decoration: underline;
     text-underline-position: under;
 }
+
+/* DASHBOARD SECTION STYLE */
+.post-title:hover {
+    color: #838383;
+}
+
+.newpost {
+    max-width: 150px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.newpost a {
+    width: 100%;
+    text-decoration: none;
+    background-color: #f03e49;
+    font-size: 1.1em;
+    padding: 7px;
+    color: white;
+    margin-bottom: 25px; 
+    text-transform: uppercase;   
+}
+
+.newpost a:hover {
+    background-color: #f3656d;
+}
