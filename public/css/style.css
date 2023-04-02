@@ -143,7 +143,7 @@ footer {
     font-size: 1.1em;
 }
 
-/* LOG IN & SIGN UP SECTIONS STYLE */
+/* LOG IN, SIGN UP & NEW POST SECTIONS STYLE */
 .login-card,
 .signup-card {
     max-width: 400px;
@@ -153,7 +153,8 @@ footer {
 }
 
 .login-card form,
-.signup-card form {
+.signup-card form,
+.new-post-card form {
     display: flex;
     flex-direction: column;
 }
@@ -168,12 +169,14 @@ footer {
 }
 
 .login-card label,
-.signup-card label {
+.signup-card label,
+.new-post-card {
     display: block;
 }
 
 .login-card button,
-.signup-card button {
+.signup-card button,
+.new-post-card button {
     background-color: #f03e49;
     text-transform: uppercase;
     border: 0;
@@ -185,7 +188,8 @@ footer {
 }
 
 .login-card button:hover,
-.signup-card button:hover {
+.signup-card button:hover,
+.new-post-card button:hover {
     background-color: #f3656d;
 }
 
@@ -231,4 +235,31 @@ footer {
 
 .newpost a:hover {
     background-color: #f3656d;
+}
+
+/* NEW POST SECTION STYLE */
+.new-post-card {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    display: block;
+    max-width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+    margin-bottom: 25px;
+    font-size: 1.2em;
+    height: 140px
+}
+
+.btn-container {
+    text-align: center;
+    margin: auto;
+}
+
+.btn-container button {
+    width: 150px;
 }

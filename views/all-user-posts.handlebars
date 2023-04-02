@@ -1,7 +1,13 @@
-<!-- PAGE CONTENT TITLE-->
-<h2>Your Dashboard</h2>
+<div>
+    <!-- PAGE CONTENT TITLE-->
+    <h2>Your Dashboard</h2>
 
-<!-- BLOG POST CARD-->
-{{#each posts as |post|}}
-{{> user-post}}
-{{/each}}
+    <!-- BLOG POST CARD-->
+    {{#each posts as |post|}}
+    {{> user-post}}
+    {{/each}}
+
+</div>
+<div class="newpost">
+    <a href="/dashboard/newpost">+ New Post</a>
+</div>

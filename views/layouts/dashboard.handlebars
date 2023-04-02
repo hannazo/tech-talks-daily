@@ -21,35 +21,25 @@
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/dashboard">Dashboard</a></li>
-                {{#if loggedIn}}
                 <li id="logout">Logout</li>
-                {{else}}
-                <li><a href="/login">Login</a></li>
-                {{/if}}
             </ul>
         </nav>
     </header>
 
     <!-- BLOG SECTION-->
     <main>
-        <!-- PAGE CONTENT TITLE-->
-        <div>
-      
-            {{{body}}}
 
-        </div>
-        <div class="newpost">
-            <a href="/dashboard/newpost">+ New Post</a>
-        </div>
+        {{{body}}}
+
     </main>
 
     <!--FOOTER SECTION-->
     <footer>
         &copy; Tech Blog
     </footer>
-    {{#if loggedIn}}
+
     <script src="/js/logout.js"></script>
-    {{/if}}
+
 </body>
 
 </html>

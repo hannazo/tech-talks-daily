@@ -28,4 +28,11 @@ router.get('/', withAuth, async (req, res) => {
     }
 });
 
+// GET route to add new post by user
+router.get('/newpost', withAuth, async (req, res) => {
+    res.render('new-post', {
+        layout: 'dashboard',
+    });
+});
+
 module.exports = router;
