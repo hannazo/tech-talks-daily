@@ -43,7 +43,7 @@ nav a {
 }
 
 nav>ul {
-    width: 35vw;
+    width: 30vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -167,6 +167,7 @@ footer {
     padding: 8px;
     margin-bottom: 25px;
     font-size: 1em;
+    font-family: 'Noto Serif', serif;
 }
 
 .login-card label,
