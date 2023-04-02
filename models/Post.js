@@ -12,11 +12,11 @@ Post.init(
             autoIncrement: true,
         },
         title: {
-            type: DataTypes.STRING(150),
+            type: DataTypes.TEXT,
             allowNull: false,
         },
         content: {
-            type: DataTypes.STRING(1000),
+            type: DataTypes.TEXT,
             allowNull: false,
         },
         // date_created: {
