@@ -1,0 +1,15 @@
+<!-- BLOG POST -->
+<div class="post">
+    {{> one-post }}
+</div>
+
+<h2>Comments</h2>
+
+<div class="comment-section">
+    {{#each comments as |comment|}}
+    {{> one-comment }}
+    {{/each}}
+</div>
+<div class="add-comment">
+    <a href="/dashboard/addcomment">+ Add Comment</a>
+</div>
