@@ -154,7 +154,8 @@ footer {
 
 .login-card form,
 .signup-card form,
-.new-post-card form {
+.new-post-card form,
+.edit-post-card form {
     display: flex;
     flex-direction: column;
 }
@@ -170,13 +171,15 @@ footer {
 
 .login-card label,
 .signup-card label,
-.new-post-card {
+.new-post-card label,
+.edit-post-card label {
     display: block;
 }
 
 .login-card button,
 .signup-card button,
-.new-post-card button {
+.new-post-card button,
+.edit-post-card button {
     background-color: #f03e49;
     text-transform: uppercase;
     border: 0;
@@ -189,7 +192,8 @@ footer {
 
 .login-card button:hover,
 .signup-card button:hover,
-.new-post-card button:hover {
+.new-post-card button:hover,
+.edit-post-card button:hover {
     background-color: #f3656d;
 }
 
@@ -239,7 +243,7 @@ footer {
 
 /* NEW POST SECTION STYLE */
 .new-post-card {
-    max-width: 800px;
+    max-width: 1400px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -251,8 +255,9 @@ textarea {
     margin: 10px 0;
     padding: 8px;
     margin-bottom: 25px;
-    font-size: 1.2em;
-    height: 140px
+    font-size: 1.0em;
+    height: 140px;
+    font-family: 'Noto Serif', serif;
 }
 
 .btn-container {
@@ -262,4 +267,26 @@ textarea {
 
 .btn-container button {
     width: 150px;
+}
+
+/* EDIT POST SECTION STYLE */
+.edit-post-card {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#save-btn {
+    background-color: #d3d3d3;
+    color: #292929;
+    margin-right: 10px;
+}
+
+#save-btn:hover {
+    background-color: #bebebe;
+}
+
+#delete-btn {
+    margin-left: 10px;
 }

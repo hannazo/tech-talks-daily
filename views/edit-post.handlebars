@@ -1,0 +1,21 @@
+<div>
+    <!-- PAGE CONTENT TITLE-->
+    <h2>Edit Post</h2>
+
+    <!-- NEW POST CARD-->
+    <div class="edit-post-card">
+        <form class="edit-post-form">
+            <input type="hidden" name="post-id" value="{{post.id}}">
+            <label for="title">Title:</label>
+            <input class="form-input" name="post-title" type="text" id="title" value="{{post.title}}">
+            <label for="content">Content:</label>
+            <textarea id="content" name="content" required>{{post.content}}</textarea>
+            <div class="btn-container">
+                <button id="save-btn" type="submit">Save</button>
+                <button id="delete-btn" type="submit">Delete</button>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="/js/edit-post.js"></script>
+<script src="/js/delete-post.js"></script>
