@@ -355,3 +355,7 @@ textarea {
 .edit-comment-card textarea {
      height: 65px;
 }
+
+.new-comment-card {
+    display: none;
+}
