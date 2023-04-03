@@ -155,7 +155,8 @@ footer {
 .login-card form,
 .signup-card form,
 .new-post-card form,
-.edit-post-card form {
+.edit-post-card form,
+.new-comment-card form {
     display: flex;
     flex-direction: column;
 }
@@ -173,14 +174,16 @@ footer {
 .login-card label,
 .signup-card label,
 .new-post-card label,
-.edit-post-card label {
+.edit-post-card label,
+.new-comment-card label {
     display: block;
 }
 
 .login-card button,
 .signup-card button,
 .new-post-card button,
-.edit-post-card button {
+.edit-post-card button,
+.new-comment-card button {
     background-color: #f03e49;
     text-transform: uppercase;
     border: 0;
@@ -194,7 +197,8 @@ footer {
 .login-card button:hover,
 .signup-card button:hover,
 .new-post-card button:hover,
-.edit-post-card button:hover {
+.edit-post-card button:hover,
+.new-comment-card button:hover {
     background-color: #f3656d;
 }
 
@@ -293,7 +297,6 @@ textarea {
 }
 
 .post {
-    width: 100%;
     display: inline-block;
     padding-left: 30px;
     border-left: 6px solid #f03e49;
@@ -308,7 +311,6 @@ textarea {
 
 .comments {
     background-color: #f9f9f9;
-    width: 100%;
     padding: 0 36px;
     line-height: 1.5;
     margin-bottom: 35px;
@@ -329,18 +331,21 @@ textarea {
     text-align: center;
 }
 
-.add-comment a {
-    width: 100%;
-    text-decoration: none;
-    background-color: #f03e49;
-    font-size: 1.1em;
-    padding: 7px;
-    color: white;
-    margin-bottom: 25px;
+.add-comment button {
+   background-color: #f03e49;
     text-transform: uppercase;
-    margin-top: 25px;
+    border: 0;
+    color: white;
+    font-size: 1.1em;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 25px;
 }
 
-.add-comment a:hover {
+.add-comment button:hover {
     background-color: #f3656d;
+}
+
+.new-comment-card textarea {
+     height: 65px;
 }

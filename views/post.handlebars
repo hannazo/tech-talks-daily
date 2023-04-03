@@ -10,6 +10,19 @@
     {{> one-comment }}
     {{/each}}
 </div>
+
 <div class="add-comment">
-    <a href="/dashboard/addcomment">+ Add Comment</a>
+    <button type="submit">Add Comment</button>
 </div>
+
+<div class="new-comment-card">
+    <form class="new-comment-form">
+        <input type="hidden" name="post-id" value="{{post.id}}">
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment" required></textarea>
+        <div class="btn-container">
+            <button type="submit">Save</button>
+        </div>
+    </form>
+</div>
+<script src="/js/add-comment.js"></script>
