@@ -18,22 +18,22 @@ router.post('/', withAuth, async (req, res) => {
   }
 });
 
-// // UPDATE user's post
-// router.put('/:id', withAuth, async (req, res) => {
-//   try {
-//     const updatedPost = await Post.update(req.body, {
-//       where: {
-//         id: req.params.id,
-//         user_id: req.session.user_id,
-//       },
-//     });
+// UPDATE user's comment
+router.put('/:id', withAuth, async (req, res) => {
+  try {
+    const updatedComment = await Comment.update(req.body, {
+      where: {
+        id: req.params.id,
+        user_id: req.session.user_id,
+      },
+    });
 
-//     res.status(200).json(updatedPost);
-//   } catch (err) {
-//     console.log(err);
-//     res.status(500).json(err);
-//   }
-// });
+    res.status(200).json(updatedComment);
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
 
 // // DELETE user's post
 // router.delete('/:id', withAuth, async (req, res) => {

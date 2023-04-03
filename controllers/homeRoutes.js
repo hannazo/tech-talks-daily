@@ -28,7 +28,7 @@ router.get('/', async (req, res) => {
     }
 });
 
-// GET one post
+// GET one post with comments
 router.get('/post/:id', withAuth, async (req, res) => {
     try {
         const postData = await Post.findByPk(req.params.id, {
@@ -69,6 +69,29 @@ router.get('/post/:id', withAuth, async (req, res) => {
     } catch (err) {
         console.log(err);
         res.status(500).json(err);
+    }
+});
+
+// GET route to edit user's comment
+router.get('/comment/edit/:id', withAuth, async (req, res) => {
+    try {
+        const commentData = await Comment.findByPk(req.params.id, {
+            include: [
+                {
+                    model: User,
+                    attributes: ['username' ],
+                },
+            ],
+        });
+
+        const comment = commentData.get({ plain: true });
+        res.render('edit-comment', { 
+            comment
+        });
+    } catch (err) {
+        console.log(err);
+        res.status(500).json(err);
+        
     }
 });
 

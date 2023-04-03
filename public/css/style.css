@@ -156,7 +156,8 @@ footer {
 .signup-card form,
 .new-post-card form,
 .edit-post-card form,
-.new-comment-card form {
+.new-comment-card form,
+.edit-comment-card form {
     display: flex;
     flex-direction: column;
 }
@@ -175,7 +176,8 @@ footer {
 .signup-card label,
 .new-post-card label,
 .edit-post-card label,
-.new-comment-card label {
+.new-comment-card label,
+.edit-comment-card label {
     display: block;
 }
 
@@ -183,7 +185,8 @@ footer {
 .signup-card button,
 .new-post-card button,
 .edit-post-card button,
-.new-comment-card button {
+.new-comment-card button,
+.edit-comment-card button {
     background-color: #f03e49;
     text-transform: uppercase;
     border: 0;
@@ -198,7 +201,8 @@ footer {
 .signup-card button:hover,
 .new-post-card button:hover,
 .edit-post-card button:hover,
-.new-comment-card button:hover {
+.new-comment-card button:hover,
+.edit-comment-card button:hover {
     background-color: #f3656d;
 }
 
@@ -275,7 +279,8 @@ textarea {
 }
 
 /* EDIT POST SECTION STYLE */
-.edit-post-card {
+.edit-post-card,
+.edit-comment-card {
     max-width: 1400px;
     margin: 0 auto;
     display: flex;
@@ -346,6 +351,7 @@ textarea {
     background-color: #f3656d;
 }
 
-.new-comment-card textarea {
+.new-comment-card textarea,
+.edit-comment-card textarea {
      height: 65px;
 }
