@@ -35,25 +35,25 @@ router.put('/:id', withAuth, async (req, res) => {
   }
 });
 
-// // DELETE user's post
-// router.delete('/:id', withAuth, async (req, res) => {
-//   try {
-//     const postData = await Post.destroy({
-//       where: {
-//         id: req.params.id,
-//       },
-//     });
+// DELETE user's comment
+router.delete('/:id', withAuth, async (req, res) => {
+  try {
+    const commentData = await Comment.destroy({
+      where: {
+        id: req.params.id,
+      },
+    });
 
-//     if (!postData) {
-//       res.status(404).json({ message: 'No post found with that id!' });
-//       return;
-//     }
+    if (!commentData) {
+      res.status(404).json({ message: 'No comment found with that id!' });
+      return;
+    }
 
-//     res.status(200).json(postData);
-//   } catch (err) {
-//     console.log(err);
-//     res.status(500).json(err);
-//   }
-// });
+    res.status(200).json(commentData);
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
 
 module.exports = router;
